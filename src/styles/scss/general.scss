@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+h1, h2, h3, h4, h5, h6 ,p, legend, a{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: $blue;
+}
+
+body{
+	font-size: 13px;
+	line-height: 1.4;
+	color: $base;
+	font-family: $regular;
+	background: $body;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.layout-container {
+	padding: 1em;
+}
+
+.modal{
+	background: rgba(1, 146, 213, 0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	.content{
+		color: $white;
+		position: absolute;
+		top: 95px;
+		right: 90px;
+		width: 200px;
+		h1{
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 1.2em;
+			margin-bottom: 10px;
+			i {
+				position: relative;
+				top: 7px;
+			}
+		}
+		.btn{
+			background: $white;
+			display: inline-block;
+			color: $blue;
+			padding: 0.8em 3em;
+			font-size: 1.16em;
+		}
+	}
+	img {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}

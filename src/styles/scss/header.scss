@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+header{
+    background-color: $red;
+    border-bottom: 1px solid $borders;
+    margin-bottom: 1em;
+    .layout-container{
+        overflow: hidden;
+    }
+    .logo,
+    .bookmark{
+        display: inline-block;
+    }
+    .logo{
+        float: left;
+    }
+    .bookmark{
+        float: right;
+    }
+    h1{
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+	header {
+		h1 {
+			img {
+
+			}
+		}
+	}
+}

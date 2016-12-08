@@ -1,0 +1,54 @@
+{
+  "name": "react-tutorials",
+  "version": "0.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-jest": "^16.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.6.1",
+    "eslint-config-rackt": "^1.1.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^6.3.0",
+    "expect": "^1.20.2",
+    "file-loader": "^0.9.0",
+    "jest": "^16.0.0",
+    "json-loader": "^0.5.4",
+    "nock": "^8.0.0",
+    "node-sass": "^3.10.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "author": "Juan Pablo Ferrari",
+  "contributors": [
+    {
+      "name": "Juan Pablo Ferrari",
+      "url": "https://github.com/juanpiwi/",
+      "email": "ferrarijuanp@gmail.com"
+    }
+  ],
+  "license": "ISC"
+}

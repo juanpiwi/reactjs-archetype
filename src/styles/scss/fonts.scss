@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'StagSans-Light';
+    src: url("fonts/stag_sans-light-webfont.eot");
+    src: url(fonts/stag_sans-light-webfont.woff) format('woff'),url(fonts/stag_sans-light-webfont.ttf) format('truetype'),url(fonts/stag_sans-light-webfont.svg#stag_sans-light-webfont) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StagSans-Semibold';
+    src: url("fonts/stag_sans-semibold-webfont.eot");
+    src: url("fonts/stag_sans-semibold-webfont.woff") format('woff'), url("fonts/stag_sans-semibold-webfont.ttf") format('truetype'), url("fonts/stag_sans-semibold-webfont.svg#stag_sans-semibold-webfont") format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'StagSans-Book';
+    src: url("fonts/stag_sans-book-webfont.eot");
+    src: url("fonts/stag_sans-book-webfont.woff") format('woff'), url("fonts/stag_sans-book-webfont.ttf") format('truetype'), url("fonts/stag_sans-book-webfont.svg#stag_sans-book-webfont") format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+// AVANTRIP DESKTOP FONT
+@font-face {
+    font-family: 'archetype-desktop';
+    src: url('fonts/archetype.eot');
+    src: url('fonts/archetype.eot#iefix') format('embedded-opentype'),
+        url('fonts/archetype.ttf') format('truetype'),
+        url('fonts/archetype.woff') format('woff'),
+        url('fonts/archetype.svg#archetype') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*material*/
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(fonts/MaterialIcons-Regular.svg) format('svg'),
+       url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+// clases fuente
+.avdFont {
+    display: inline-block;
+    font: normal normal normal 14px/1 archetype-desktop;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.avd-phone:before {
+    content: "\e904";
+}
+.avd-mobile:before {
+    content: "\e905";
+}
+.avd-wallet:before {
+    content: "\e900";
+}
+.avd-help-center:before {
+    content: "\e901";
+}
+.avd-contact:before {
+    content: "\f086";
+}
+.avd-disney:before {
+    content: "\e903";
+}
+.avd-search:before {
+    content: "\f002";
+}
+.avd-star:before {
+    content: "\f005";
+}
+.avd-user:before {
+    content: "\f007";
+}
+.avd-th-large:before {
+    content: "\f009";
+}
+.avd-check:before {
+    content: "\f00c";
+}
+.avd-close:before {
+    content: "\f00d";
+}
+.avd-config:before {
+    content: "\f013";
+}
+.avd-trash-o:before {
+    content: "\f014";
+}
+.avd-clock-o:before {
+    content: "\f017";
+}
+.avd-lock:before {
+    content: "\f023";
+}
+.avd-tags:before {
+    content: "\f02c";
+}
+.avd-align-justify:before {
+    content: "\f039";
+}
+.avd-chevron-left:before {
+    content: "\f053";
+}
+.avd-chevron-right:before {
+    content: "\f054";
+}
+.avd-plus-circle:before {
+    content: "\f055";
+}
+.avd-minus-circle:before {
+    content: "\f056";
+}
+.avd-times-circle:before {
+    content: "\f057";
+}
+.avd-check-circle:before {
+    content: "\f058";
+}
+.avd-question-circle:before {
+    content: "\f059";
+}
+.avd-info-circle:before {
+    content: "\f05a";
+}
+.avd-times-circle-o:before {
+    content: "\f05c";
+}
+.avd-check-circle-o:before {
+    content: "\f05d";
+}
+.avd-plus:before {
+    content: "\f067";
+}
+.avd-minus:before {
+    content: "\f068";
+}
+.avd-gift:before {
+    content: "\f06b";
+}
+.avd-plane:before {
+    content: "\f072";
+}
+.avd-calendar:before {
+    content: "\f073";
+}
+.avd-comment:before {
+    content: "\f075";
+}
+.avd-chat:before {
+    content: "\f086";
+}
+.avd-star-half:before {
+    content: "\f089";
+}
+.avd-twitter:before {
+    content: "\f099";
+}
+.avd-facebook:before {
+    content: "\f09a";
+}
+.avd-credit-card:before {
+    content: "\f09d";
+}
+.avd-arrow-circle-left:before {
+    content: "\f0a8";
+}
+.avd-arrow-circle-right:before {
+    content: "\f0a9";
+}
+.avd-arrow-circle-up:before {
+    content: "\f0aa";
+}
+.avd-arrow-circle-down:before {
+    content: "\f0ab";
+}
+.avd-bars:before {
+    content: "\f0c9";
+}
+.avd-google-plus-square:before {
+    content: "\f0d4";
+}
+.avd-google-plus:before {
+    content: "\f0d5";
+}
+.avd-caret-down:before {
+    content: "\f0d7";
+}
+.avd-caret-up:before {
+    content: "\f0d8";
+}
+.avd-caret-left:before {
+    content: "\f0d9";
+}
+.avd-caret-right:before {
+    content: "\f0da";
+}
+.avd-envelope:before {
+    content: "\f0e0";
+}
+.avd-suitcase:before {
+    content: "\f0f2";
+}
+.avd-cutlery:before {
+    content: "\f0f5";
+}
+.avd-ambulance:before {
+    content: "\f0f9";
+}
+.avd-angle-double-left:before {
+    content: "\f100";
+}
+.avd-angle-double-right:before {
+    content: "\f101";
+}
+.avd-angle-double-up:before {
+    content: "\f102";
+}
+.avd-angle-double-down:before {
+    content: "\f103";
+}
+.avd-angle-left:before {
+    content: "\f104";
+}
+.avd-angle-right:before {
+    content: "\f105";
+}
+.avd-angle-up:before {
+    content: "\f106";
+}
+.avd-angle-down:before {
+    content: "\f107";
+}
+.avd-spinner:before {
+    content: "\f110";
+}
+.avd-anchor:before {
+    content: "\f13d";
+}
+.avd-automobile:before {
+    content: "\f1b9";
+}
+.avd-bus:before {
+    content: "\f207";
+}
