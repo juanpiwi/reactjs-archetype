@@ -16,4 +16,4 @@ To run & work on this project you need to have the following installed:
 - cd `project-directory`
 - `npm install`
 - `npm start` - For development mode
-3. Access to http://localhost:8080/ in web browser
+3. Access to http://localhost:5000/ in web browser
