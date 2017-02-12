@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 function Body(props) {
   return (
@@ -18,7 +18,7 @@ function handleClick(name) {
 }
 
 
-export default class Container extends React.Component {
+export default class Container extends Component {
   constructor(props) {
     super(props)
     this.state = { name: 'Juanpi' }

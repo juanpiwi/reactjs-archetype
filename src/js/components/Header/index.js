@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 function Container(props) {
   const payloadProp = { className: 'layout-container' }
@@ -9,7 +9,7 @@ function Container(props) {
   )
 }
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   render() {
     const name = this.props.name
     return (
