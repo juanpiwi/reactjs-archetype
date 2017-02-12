@@ -1,26 +1,5 @@
 import React from 'react'
 
-/*function Container () {
-  //return (
-    //const props = { className: 'layout-container' }
-    return (
-      <header>
-          <div>
-              HEADER
-          </div>
-      </header>
-    )
-  //)
-}
-
-export default class Header extends React.Component {
-  render() {
-    return(
-      Container
-    )
-  }
-}*/
-
 function Container(props) {
   const payloadProp = { className: 'layout-container' }
   return (

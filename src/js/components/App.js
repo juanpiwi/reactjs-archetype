@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return <div>
         <Header name="HEADER" />
-        <Container />
+        <Container name="CONTAINER" />
     </div>
   }
 
