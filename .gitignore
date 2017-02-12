@@ -2,3 +2,4 @@ src/client.min.js
 build
 node_modules
 npm-debug.log
+yarn.lock
