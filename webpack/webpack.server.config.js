@@ -43,10 +43,7 @@ module.exports = {
     contentBase: './src',
     host: '0.0.0.0',
     port: 5000
-  },
-  eslint: {
-    configFile: './.eslintrc'
-  },
+  },  
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),

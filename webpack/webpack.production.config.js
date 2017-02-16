@@ -84,9 +84,6 @@ module.exports = {
     path: PATHS.build,
     filename: 'client.min.js'
   },
-  eslint: {
-    configFile: './.eslintrc'
-  },
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
