@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 
 function Body(props) {
   return (
@@ -18,7 +18,7 @@ function handleClick(name) {
 }
 
 
-export default class Container extends Component {
+class Container extends Component {
   constructor(props) {
     super(props)
     this.state = { name: 'Juanpi' }
@@ -26,7 +26,7 @@ export default class Container extends Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    if(nextState.name !== this.state.name) {
+    if (nextState.name !== this.state.name) {
       this.handleClick = handleClick.bind(this, nextState.name)
     }
   }
@@ -34,7 +34,7 @@ export default class Container extends Component {
   render() {
     return (
       <div>
-        <Body name={this.props.name}/>
+        <Body name={this.props.name} />
         <button onClick={this.handleClick}>
                 Click me {this.state.name}
         </button>
@@ -42,3 +42,9 @@ export default class Container extends Component {
     )
   }
 }
+
+Container.propTypes = {
+  name: PropTypes.string
+}
+
+export default Container

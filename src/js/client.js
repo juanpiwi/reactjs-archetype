@@ -8,9 +8,8 @@ require('./../styles/main.scss')
 const app = document.getElementById('app')
 
 ReactDOM.render(
-    <Router history={browserHistory}>
-      <Route path="/" component={App}>
-      </Route>
-    </Router>,
-    app
+  <Router history={browserHistory}>
+    <Route path="/" component={App} />
+  </Router>,
+  app
 )

@@ -2,12 +2,12 @@ import React from 'react'
 import Header from './Header/index'
 import Container from './Container/index'
 
-export default class App extends React.Component {
-  render() {
-    return <div>
-        <Header name="HEADER" />
-        <Container name="CONTAINER" />
-    </div>
-  }
 
-}
+const App = () => (
+  <div>
+    <Header name="HEADER" />
+    <Container name="CONTAINER" />
+  </div>
+)
+
+export default App
