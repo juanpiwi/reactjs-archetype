@@ -34,9 +34,12 @@ const config = {
       }
     ]
   },
-  output: {
-    path: __dirname + '/src/',
-    filename: 'client.min.js'
+  output: {    
+    filename: 'client.min.js',
+    path: './built/statics',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? 'https://platzi-react-sfs.now.sh'
+      : 'http://localhost:5000/'
   },
   devServer: {
     inline: true,
