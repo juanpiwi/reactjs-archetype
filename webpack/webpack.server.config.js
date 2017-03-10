@@ -2,7 +2,7 @@ var debug = process.env.NODE_ENV !== 'production'
 var webpack = require('webpack')
 var path = require('path')
 
-module.exports = {
+const config = {
   context: path.join(__dirname, '..', 'src'),
   devtool: debug ? 'inline-sourcemap' : null,
   entry: './js/client.js',
@@ -44,9 +44,28 @@ module.exports = {
     host: '0.0.0.0',
     port: 5000
   },
-  plugins: debug ? [] : [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
+      }
+    }),
+    new webpack.optimize.OccurenceOrderPlugin(true)
   ]
 }
+
+if (process.env.NODE_ENV === 'production') {
+  config.plugins.push(
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      mangle: {
+        except: ['$super', '$', 'exports', 'require']
+      }
+    })
+ )
+}
+
+module.exports = config
