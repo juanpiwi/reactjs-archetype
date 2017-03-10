@@ -1,6 +1,15 @@
+const fs = require('fs')
 var debug = process.env.NODE_ENV !== 'production'
 var webpack = require('webpack')
 var path = require('path')
+
+const nodeModules = fs
+  .readdirSync('node_modules')
+  .filter(x => ['.bin'].indexOf(x) === -1)
+  .reduce(
+    (modules, module) => Object.assign(modules, { [module]: `commonjs ${module}` }),
+    {}
+  )
 
 const config = {
   context: path.join(__dirname, '..', 'src'),
@@ -34,7 +43,7 @@ const config = {
       }
     ]
   },
-  output: {    
+  output: {
     filename: 'client.min.js',
     path: './built/statics',
     publicPath: process.env.NODE_ENV === 'production'
@@ -47,6 +56,7 @@ const config = {
     host: '0.0.0.0',
     port: 5000
   },
+  externals: nodeModules,
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
