@@ -1,15 +1,15 @@
+const webpack = require('webpack')
+const debug = process.env.NODE_ENV !== 'production'
+const path = require('path')
 const fs = require('fs')
-var debug = process.env.NODE_ENV !== 'production'
-var webpack = require('webpack')
-var path = require('path')
 
-const nodeModules = fs
+/* const nodeModules = fs
   .readdirSync('node_modules')
   .filter(x => ['.bin'].indexOf(x) === -1)
   .reduce(
     (modules, module) => Object.assign(modules, { [module]: `commonjs ${module}` }),
     {}
-  )
+  )*/
 
 const config = {
   context: path.join(__dirname, '..', 'src'),
@@ -48,15 +48,15 @@ const config = {
     path: './built/statics',
     publicPath: process.env.NODE_ENV === 'production'
       ? 'https://platzi-react-sfs.now.sh'
-      : 'http://localhost:5000/'
+      : 'http://localhost:5555/'
   },
   devServer: {
     inline: true,
     contentBase: './src',
     host: '0.0.0.0',
-    port: 5000
+    port: 5555
   },
-  externals: nodeModules,
+  //externals: nodeModules,
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
