@@ -47,7 +47,9 @@
     "start": "webpack-dev-server",
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
     "build": "NODE_ENV=production webpack -p",
+    "bff": "node ./built/server/index.js",
     "deploy": "now",
+    "deploy:sfs": "now ./built/statics/",
     "test": "jest",
     "test:watch": "npm test -- --watch"
   },
